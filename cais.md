@@ -1,4 +1,4 @@
-At the top, write your first and last name, as well as your USC email address.
+At the top, write your first and last name, as well as your USC email address. \indent
 In one or two sentences, present your project to us!
 Dataset: Indicate the dataset you chose to use, any preprocessing steps that were applied, as well as the reasoning behind these choices.
 Model Development and Training: Discuss your model implementation choices, the training procedure, the conditions you settled on (e.g., hyperparameters), and discuss why these are a good set for your task.
