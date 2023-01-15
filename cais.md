@@ -1,6 +1,5 @@
 Sanya Verma <br />
 sanyaver@usc.edu <br />
-In one or two sentences, present your project to us! <br />
 <br />
 => I used the ASL Dataset to train the Computer Vision Multiclass Classification model on the 29 different types of characters available: A-Z, DELETE, NOTHING and SPACE. This would do the work of translating and communicating for deaf or mute people. <br />
 <br />
