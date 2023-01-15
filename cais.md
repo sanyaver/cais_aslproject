@@ -23,13 +23,15 @@ Other parameters are validation_split=0.2 - 20% of images are used for validatio
 => 3989s 4s/step - loss: 0.1042 - accuracy: 0.9667 - val_loss: 0.0668 - val_accuracy: 0.9783 <br />
 ![alt text](https://github.com/sanyaver/cais_aslproject/blob/main/download.png?raw=true)
 
-=> These are all standard metrics to use as I was prioritizing accuracy. I got an accuracy of 96.67% with a validation accuracy of 97.83%. <br />
+=> These are all standard metrics to use as I was prioritizing accuracy. I got an accuracy of 96.67% with a validation accuracy of 97.83% and a loss of 10.42% which is a bit higher than I would have liked but not too bad. <br />
 <br />
 **Discussion:** <br />
 How well does your dataset, model architecture, training procedures, and chosen metrics fit the task at hand? <br />
 => It does a pretty good job overall as it was able to pretty accurately predict the right character for most images. It was also not too slow, which was a priority of mine for efficiency and to ensure the model worked before I can finetune it further. <br />
-Can your efforts be extended to wider implications, or contribute to social good? Are there any limitations in your methods that should be considered before doing so? <br />
+<br />
+Can your efforts be extended to wider implications, or contribute to social good? Are there any limitations in your methods that should be considered before doing so? 
 => Absolutely, it is invaluable for not only the hard of hearing/mute community but also for the people around them to be able to communicate with them better. It’s not 100% accurate so far so there would certainly be mistranslations. Another limitation is that ASL is a very complex language and this only helps with letter reading, but not words or sentence structures. <br />
+<br />
 If you were to continue this project, what would be your next steps? <br />
 => I would like to focus on being able to real-time translate videos as well as on figuring out how to translate more complex ASL words/phrases. There hasn’t been a lot of work in NLP for ASL as it is quite different from other traditionally spoken or written languages so it could be interesting to combine this with an NLP project <br />
 <br />
