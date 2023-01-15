@@ -6,7 +6,6 @@ sanyaver@usc.edu <br />
 => I used the ASL Dataset to train the Computer Vision Multiclass Classification model on the 29 different types of characters available: A-Z, DELETE, NOTHING and SPACE. This would do the work of translating and communicating for deaf or mute people. <br />
 <br />
 **Dataset:** Indicate the dataset you chose to use, any preprocessing steps that were applied, as well as the reasoning behind these choices. <br />
-<br />
 => I used the ASL Dataset from kaggle (https://www.kaggle.com/datasets/grassknoted/asl-alphabet) with 29 test jpegs and 87000 training jpegs sorted into 29 different classes <br />
 => ImageDataGenerator is a preprocessing class which helps us augment our training example images by randomly transforming them and making it such that the same image is never repeated. This helps prevent overfitting and the model can generalize better. It allows us to configure random transformations and operations on image data during training. <br />
 => Tf.keras.applications.mobilenet.preprocess_input is the preprocessing function which scales input pixels between -1 and 1 which standardizes the input. It is also necessary to have image pixels between -1 and 1 for the MobileNet model we will use.<br />
@@ -14,7 +13,6 @@ Other parameters are validation_split=0.2 - 20% of images are used for validatio
 => So we first created dataframes, preprocessed training images and then split them into training and validation into an 80-20 split. <br />
 <br />
 **Model Development and Training:** Discuss your model implementation choices, the training procedure, the conditions you settled on (e.g., hyperparameters), and discuss why these are a good set for your task. <br />
-<br />
 => The MobileNet model being used is pre-trained on the ImageNet dataset which has 1.4M images and over a 1000 classes. It uses the feature extractor portion of the pre-trained model and has a bottleneck layer which retains features best. It doesn’t update the weights, just like Approach #1 in Lecture_4 of Curriculum. <br />
 => It has a Top-1 or conventional accuracy of about 70% and a Top-5 accuracy of about 90% generally. Also it didn’t take as much time as some other models I tried like ResNet50. <br />
 => The relu activation function used is quite fast as well and doesn’t have the vanishing gradient problem very often. We then use the softmax activation function on the output because it’s better for multiclass classification compared to the Sigmoid function. <br />
