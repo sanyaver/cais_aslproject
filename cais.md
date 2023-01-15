@@ -22,7 +22,7 @@ Other parameters are validation_split=0.2 - 20% of images are used for validatio
 <br />
 **Model Evaluation/Results:** Present the metrics you chose and your model evaluation results. <br />
 => 3989s 4s/step - loss: 0.1042 - accuracy: 0.9667 - val_loss: 0.0668 - val_accuracy: 0.9783 <br />
-
+![alt text]([http://url/to/img.png](https://github.com/sanyaver/cais_aslproject/blob/main/download.png))
 => These are all standard metrics to use as I was prioritizing accuracy. I got an accuracy of 96.67% with a validation accuracy of 97.83%. <br />
 <br />
 **Discussion:** <br />
